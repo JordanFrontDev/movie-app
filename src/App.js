@@ -11,7 +11,7 @@ library.add(faSearch, faFilm, faClock, faMoneyBill, faTicketAlt);
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename='/movie-app/'>
             <React.Fragment>
                 <Header />
                 <Switch>
