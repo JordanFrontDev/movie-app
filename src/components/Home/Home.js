@@ -28,7 +28,7 @@ const Home = () => {
         try {
             const popularMovies = await axios(data);
             
-            setMovies([...movies, ...popularMovies.data.results]);
+            setMovies([...movies]);
             setHeroImage(heroImage || popularMovies.data.results[0]);
             setIsLoading(false);
             setCurrentPage(popularMovies.data.page);
